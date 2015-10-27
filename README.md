@@ -1,2 +1,2 @@
 # Poker24
-24 poker game using distributd computing technology in Java
+24 poker game using distributed computing technology in Java
