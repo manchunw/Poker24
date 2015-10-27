@@ -2,6 +2,23 @@
 ## Description
 24 poker game using distributed computing technology in Java
 
+## How to Play
+At least two players are present.
+Cards of A,1,2...K are numbered as 1 to 13.
+Parse the formula to make up a sum of 24.
+If correct, players are then notified who is the winner and move to the next round.
+
+The first one to guess the formula of 
+## Principle
+* Use connection factory, queue and topic provided by Glassfish to simulate the server system.
+* Use JDBC to connect with SQLite database
+* Use SQL statements to calculate ranks
+* Use RMI to send remote procedure calls
+* A timer principle
+  * Wait for 10 seconds for players to join.
+  * If only 1 player is found after 10 seconds, wait until one more player joins and the game starts immediately.
+  * If there are 4 players, ignore the timer and the game starts immediately.
+
 ## Setup
 1. Install Java JDK.
 2. Pull the server files from [here](https://github.com/manchunw/Poker24Server).
