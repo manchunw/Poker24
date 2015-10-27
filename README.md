@@ -45,21 +45,21 @@ permission java.io.FilePermission "lib\gf-client.jar", "read";
 
 ## How to use
 1. Open Commpand Prompt and start Glassfish domain.
-```
-cd "C:\<glassfish directory>\bin"
-asadmin start-domain
-```
+  ```
+  cd "C:\<glassfish directory>\bin"
+  asadmin start-domain
+  ```
 2. Open another Command Prompt and start RMI registry.
-```
-cd "C:\<JDK directory>\bin"
-start rmiregistry
-```
+  ```
+  cd "C:\<JDK directory>\bin"
+  start rmiregistry
+  ```
 3. Open another Command Prompt and start the server.
-```
-java -Djava.security.policy="C:\<Poker24 directory>\security.policy" -cp "C:\<glassfish directory>\lib\gf-client.jar;C:\<Poker24 directory>\JPoker24GameServer.jar;C:\<Poker24 directory>\sqlite-jdbc-3.8.7.jar" JPoker24GameServer jpoker24game.sqlite
-```
+  ```
+  java -Djava.security.policy="C:\<Poker24 directory>\security.policy" -cp "C:\<glassfish directory>\lib\gf-client.jar;C:\<Poker24 directory>\JPoker24GameServer.jar;C:\<Poker24 directory>\sqlite-jdbc-3.8.7.jar" JPoker24GameServer jpoker24game.sqlite
+  ```
 4. Open another Command Prompt and start the client.
-```
-java -Djava.security.policy="C:\<Poker24 directory>\security.policy" -cp "C:\<glassfish directory>\lib\gf-client.jar;C:\<Poker24 directory>\JPoker24GameServer.jar;C:\<Poker24 directory>\sqlite-jdbc-3.8.7.jar" JPoker24GameServer jpoker24game.sqlite
-```
+  ```
+  java -Djava.security.policy="C:\<Poker24 directory>\security.policy" -cp "C:\<glassfish directory>\lib\gf-client.jar;C:\<Poker24 directory>\JPoker24GameServer.jar;C:\<Poker24 directory>\sqlite-jdbc-3.8.7.jar" JPoker24GameServer jpoker24game.sqlite
+  ```
 5. Done! You can play the game.
